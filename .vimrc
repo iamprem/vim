@@ -68,7 +68,8 @@ au BufRead,BufNewFile *.s set tabstop=8
 syntax on
 
 " This is my prefered colorscheme, open a file with gvim to view others
-colors elflord
+"colors elflord
+colors railscasts
 
 " For switching between many opened file by using ctrl+l or ctrl+h
 map <C-J> :next <CR>
