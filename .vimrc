@@ -23,6 +23,8 @@ Plugin 'bling/vim-airline' "statusbar plugin
 
 Plugin 'flazz/vim-colorschemes' "so many colors~
 
+Plugin 'tpope/vim-vinegar' " so bitter
+
 call vundle#end()
 filetype plugin indent on
 
@@ -55,14 +57,17 @@ let g:airline_powerline_fonts=1	"Make powerline symbols show
 
 
 " Expand tabs in C files to spaces
-au BufRead,BufNewFile *.{c,h,java,php} set expandtab
-au BufRead,BufNewFile *.{c,h,java,php} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,php} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp} set expandtab
+au BufRead,BufNewFile *.{c,h,java,php,cpp} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
 au BufRead,BufNewFile *.s set shiftwidth=8
 au BufRead,BufNewFile *.s set tabstop=8
+
+" Be sure to set the syntax for markdown files
+au BufRead,BufNewfile *.md set syntax=mkd
 
 " Show syntax
 syntax on
