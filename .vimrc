@@ -23,7 +23,6 @@ Plugin 'bling/vim-airline' "statusbar plugin
 
 Plugin 'flazz/vim-colorschemes' "so many colors~
 
-Plugin 'tpope/vim-vinegar' " so bitter
 
 call vundle#end()
 filetype plugin indent on
