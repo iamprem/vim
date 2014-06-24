@@ -23,9 +23,11 @@ Plugin 'bling/vim-airline' "statusbar plugin
 
 Plugin 'flazz/vim-colorschemes' "so many colors~
 
+Plugin 'scrooloose/nerdtree' "NERD Tree!
 
 call vundle#end()
 filetype plugin indent on
+
 
 set nu              	" line numbering on
 set autoindent          " autoindent on
@@ -82,6 +84,9 @@ map <C-K> :prev <CR>
 " Spelling toggle via F10 and F11
 map <F10> <Esc>setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>setlocal nospell<CR>
+
+" NERD Tree keybindings
+map <C-n> :NERDTreeToggle<CR>
 
 
 
