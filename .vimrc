@@ -58,9 +58,9 @@ let g:airline_powerline_fonts=1	"Make powerline symbols show
 
 
 " Expand tabs in C files to spaces
-au BufRead,BufNewFile *.{c,h,java,php,cpp} set expandtab
-au BufRead,BufNewFile *.{c,h,java,php,cpp} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,php,cpp} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp} set expandtab
+au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
