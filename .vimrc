@@ -16,14 +16,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin() "Start plugin loading
 
 Plugin 'gmarik/Vundle.vim' "Plugin manager plugin
-
 Plugin 'tpope/vim-fugitive' "Git plugin
-
 Plugin 'bling/vim-airline' "statusbar plugin
-
 Plugin 'flazz/vim-colorschemes' "so many colors~
-
 Plugin 'scrooloose/nerdtree' "NERD Tree!
+Plugin 'ervandew/supertab' " Tab completion
+Plugin 'terryma/vim-multiple-cursors' " Sublime like cursors
 
 call vundle#end()
 filetype plugin indent on
@@ -54,13 +52,14 @@ set encoding=utf-8	" moar symbols
 set background=dark
 
 let g:airline_powerline_fonts=1	"Make powerline symbols show
+let g:netrw_liststyle=3
 
 
 
 " Expand tabs in C files to spaces
-au BufRead,BufNewFile *.{c,h,java,php,cpp} set expandtab
-au BufRead,BufNewFile *.{c,h,java,php,cpp} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,php,cpp} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp,cs} set expandtab
+au BufRead,BufNewFile *.{c,h,java,php,cpp,cs} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp,cs} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
@@ -86,7 +85,7 @@ map <F10> <Esc>setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>setlocal nospell<CR>
 
 " NERD Tree keybindings
-map <C-n> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeToggle<CR>
 
 
 
