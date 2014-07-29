@@ -57,9 +57,9 @@ let g:netrw_liststyle=3
 
 
 " Expand tabs in C files to spaces
-au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp} set expandtab
-au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp,pp} set expandtab
+au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp,pp} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp,pp} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
