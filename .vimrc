@@ -81,8 +81,8 @@ map <C-J> :next <CR>
 map <C-K> :prev <CR>
 
 " Spelling toggle via F10 and F11
-map <F10> <Esc>setlocal spell spelllang=en_us<CR>
-map <F11> <Esc>setlocal nospell<CR>
+map <F10> :setlocal spell spelllang=en_us<CR>
+map <F11> :setlocal nospell<CR>
 
 " NERD Tree keybindings
 map <C-b> :NERDTreeToggle<CR>
