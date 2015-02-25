@@ -80,6 +80,8 @@ colors railscasts
 " For switching between many opened file by using ctrl+l or ctrl+h
 map <C-J> :next <CR>
 map <C-K> :prev <CR>
+map <C-H> :tabprev <CR>
+map <C-L> :tabnext <CR>
 
 " Spelling toggle via F10 and F11
 map <F10> :setlocal spell spelllang=en_us<CR>
@@ -87,6 +89,3 @@ map <F11> :setlocal nospell<CR>
 
 " NERD Tree keybindings
 map <C-b> :NERDTreeToggle<CR>
-
-
-
