@@ -5,5 +5,5 @@ install:
 	rm -rf ~/.vim/bundle/Vundle.vim
 	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	vim +PluginInstall +qall
+	powerline-fonts/install.sh
 	@printf "Installation Complete!\n\n\n"
-	@printf "Remember to install the fonts from %s/powerline-fonts and apply them\n", `pwd`
